@@ -17,20 +17,12 @@
 .flex-direction-column{
     flex-direction: column;
 }
-.w-100{
-    width: 100%;
-}
-.h-100{
-    height: 100%;
-}
-
 .align-items-center {
     align-items: center;
 }
 .align-items-end{
     align-items: flex-end;
 }
-
 
 .flex-grow-1{
     flex-grow: 1;
@@ -39,12 +31,20 @@
     flex-wrap: wrap;
 }
 
+
 .d-block {
     display: block;
 }
 
 .d-inline-block {
     display: inline-block;
+}
+
+.w-100{
+    width: 100%;
+}
+.h-100{
+    height: 100%;
 }
 
 
