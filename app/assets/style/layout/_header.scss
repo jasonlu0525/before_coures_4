@@ -1,0 +1,78 @@
+
+
+.container{
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+  &-fulid{
+    max-width: 100%;
+    padding: 0 88px;
+  }
+  @include pad-768{
+    padding: 0 39px;
+  }
+  @include phone-414{
+    padding: 0 15px;
+  }
+}
+
+.logo {
+  background-image: url("../images/logo.png");
+  width: 80px;
+  height: 49px;
+  white-space: nowrap;
+  text-indent: 101%;
+  overflow: hidden;
+  @include phone-576{
+    width: 48px;
+    height: 29px;
+    background-size: contain;
+   
+  }
+}
+
+
+.header {
+  font-size: $fs-7;
+
+  @include phone-576{
+    flex-direction: column;
+    padding: 10px 0 0 ;
+  }
+}
+
+.nav{
+  flex-wrap: wrap;
+  // @extend %border-y;
+  @include phone-576{
+    align-self: stretch;
+margin-top: 10.86px;
+  }
+  &-items{
+    @include phone-576{
+      flex:0 0 50%;
+     
+    }
+  }
+}
+
+.link {
+  padding: 40px 32px;
+  transition: ease-in 0.2s;
+  @include pad-768{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @include phone-576{
+    padding: 8px 0;
+  }
+
+  &-end{
+    padding-right: 0;
+  }
+  &-hover:hover {
+    text-decoration: 2px solid underline;
+  }
+
+}

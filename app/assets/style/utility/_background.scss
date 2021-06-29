@@ -1,0 +1,133 @@
+.bg-primary {
+    background-color: $primary;
+}
+
+.bg-secondary {
+    background-color: $secondary;
+}
+
+.bg-white {
+    background-color: $white;
+}
+
+.bg-dark {
+    background-color: $dark;
+}
+
+.bg-tertiary {
+    background-color: $tertiary;
+}
+
+.bg-brown-dark-1 {
+    background-color: $brown-dark-1;
+}
+
+.bg-brown-light-1 {
+    background-color: $brown-light-1;
+}
+
+.bg-gray-light-4 {
+    background-color: $gray-light-4;
+}
+
+
+
+
+.border {
+    border: 1px solid $white;
+}
+
+.border-top {
+    border-top: 1px solid $white;
+}
+
+.border-start {
+    border-left: 1px solid $white;
+}
+
+.border-end {
+    border-right: 1px solid $white;
+}
+
+.border-bottom {
+    border-bottom: 1px solid $white;
+}
+
+.border-x {
+    border-left: 1px solid $white;
+    border-right: 1px solid $white;
+}
+
+.border-y {
+    border-top: 1px solid $white;
+    border-bottom: 1px solid $white;
+}
+
+@include phone-576 {
+
+    .border-576 {
+        border: 1px solid $white;
+    }
+
+    .border-top-576 {
+        border-top: 1px solid $white;
+    }
+
+    .border-start-576 {
+        border-left: 1px solid $white;
+    }
+
+    .border-end-576 {
+        border-right: 1px solid $white;
+    }
+
+    .border-bottom-576 {
+        border-bottom: 1px solid $white;
+    }
+
+    .border-x-576 {
+        border-left: 1px solid $white;
+        border-right: 1px solid $white;
+    }
+
+    .border-y-576 {
+        border-top: 1px solid $white;
+        border-bottom: 1px solid $white;
+    }
+}
+
+.border-dark {
+    border-color: $dark;
+}
+
+.border-gray-light-1 {
+    border-color: $gray-light-1;
+}
+
+.border-gray-light-2 {
+    border-color: $gray-light-2;
+}
+
+.border-gray-light-3 {
+    border-color: $gray-light-3;
+}
+
+.border-gray-light-4 {
+    border-color: $gray-light-4;
+}
+
+.border-gray-dark-1 {
+    border-color: $gray-dark-1;
+}
+.border-gray-dark-2 {
+    border-color: $gray-dark-2;
+}
+
+.border-gray-dark-3 {
+    border-color: $gray-dark-3;
+}
+
+
+.border-1 {
+    border-width: 1px;
+}

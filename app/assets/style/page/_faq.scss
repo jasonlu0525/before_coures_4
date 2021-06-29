@@ -1,0 +1,126 @@
+.faq-service-banner {
+    background-image: url(../images/qa.png);
+    height: 304px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include pad-768 {
+        background-position: -350px 50%;
+    }
+
+    @include phone-576 {
+        background-position: -100px 50%;
+        height: 143px;
+    }
+
+    @include phone-375 {
+        background-position: -150px 50%;
+        height: 143px;
+    }
+
+    &-tittle {
+        margin-right: 24px;
+
+        @include pad-768 {
+            margin-right: 16px;
+            font-size: $fs-2;
+        }
+
+        @include phone-576 {
+            margin-right: 8px;
+            font-size: $fs-5;
+        }
+    } 
+
+    &-help {
+        width: 58px;
+        height: 58px;
+
+        @include pad-768 {
+            width: 48px;
+            height: 48px;
+        }
+
+        @include phone-576 {
+            width: 24px;
+            height: 24px;
+        }
+    }
+    &-location {
+        width: 48px;
+        height: 58px;
+
+        @include pad-768 {
+            width: 30px;
+            height: 44px;
+        }
+
+        @include phone-576 {
+            width: 14px;
+            height: 24px;
+        }
+    }
+}
+
+.faq {
+    padding: 80px 0 304px;
+
+    @include pad-768 {
+        padding: 40px 0 104px;
+    }
+
+    @include phone-576 {
+        padding: 24px 0 56px;
+    }
+
+    &-tittle {
+        margin-bottom: 36px;
+
+        @include phone-576 {
+            font-size: $fs-7;
+            margin-bottom: 12px;
+        }
+    }
+
+    &-list {
+
+
+        &-items {
+            margin-bottom: 40px;
+
+            @include phone-576 {
+                margin-bottom: 20px;
+
+            }
+
+            &.end {
+                margin-bottom: 0px;
+            }
+
+            &-tittle {
+                margin-bottom: 16px;
+
+                @include phone-576 {
+                    font-size: $fs-10;
+                    margin-bottom: 8px;
+                }
+            }
+
+            &-ans {
+                max-width: 920px;
+                padding-left: 90px;
+
+                @include pad-768 {
+                    padding-left: 60px;
+                }
+
+                @include phone-576 {
+                    font-size: $fs-11;
+                    padding-left: 0px;
+                }
+
+            }
+        }
+    }
+}

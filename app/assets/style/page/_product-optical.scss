@@ -1,0 +1,217 @@
+.nav-container {
+    max-width: 1386px;
+    margin: 0 auto;
+
+    @include pad-768 {
+        position: sticky;
+        top: 110px;
+        z-index: 999;
+    }
+
+    @include phone-576 {
+
+        top: 147px;
+    }
+
+}
+
+
+.product {
+
+    &-nav {
+        flex: 0 0 33.33333%;
+
+        &-link {
+            padding: 24px 0;
+
+            @include pad-768 {
+                padding: 16px 0;
+            }
+
+            @include phone-576 {
+                padding: 8px 0;
+            }
+
+            &:hover,
+            &.active {
+                padding-bottom: 8px;
+                border-bottom: 16px solid $primary;
+
+                @include pad-768 {
+                    border-bottom-width: 8px;
+                }
+
+                @include phone-576 {
+                    padding-bottom: 4px;
+                    border-bottom-width: 4px;
+                }
+            }
+
+            &-pic {
+                width: 48px;
+                height: 38px;
+
+                @include pad-768 {
+                    width: 32px;
+                    height: 32px;
+                }
+
+                @include phone-576 {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+
+            &-tittle {
+                margin-left: 8px;
+                font-size: 42px;
+
+                @include pad-768 {
+                    font-size: $fs-5;
+                }
+
+                @include phone-576 {
+                    margin-left: 5px;
+                    font-size: $fs-11;
+                }
+            }
+        }
+    }
+
+    &-banner {
+        flex: 0 0 49.21875%;
+        margin-bottom: 88px;
+
+        @include pad-768 {
+            margin-bottom: 40px;
+            flex: 0 0 50%;
+        }
+
+        @include phone-576 {
+            margin-bottom: 30px;
+        }
+
+        &-pic {
+            height: 309px;
+
+            @include pad-768 {
+                flex: 0 0 50%;
+            }
+
+            @include phone-576 {
+                height: 144px;
+            }
+        }
+
+    }
+
+    &-tittle {
+        font-size: 42px;
+
+        @include pad-768 {
+            font-size: $fs-4;
+        }
+
+        @include phone-576 {
+            font-size: $fs-7;
+        }
+    }
+
+    &-subtittle {
+        font-size: $fs-4;
+        margin-bottom: 40px;
+
+        @include pad-768 {
+            font-size: $fs-6;
+            margin-bottom: 32px;
+        }
+
+        @include phone-576 {
+            font-size: $fs-10;
+            margin-bottom: 20px;
+        }
+    }
+
+    &-list {
+
+        &-items {
+            flex: 0 0 22.972972973%;
+            margin-bottom: 104px;
+
+            @include pad-768 {
+                flex: 0 0 47.826086956%;
+                margin-bottom: 72px;
+            }
+
+            @include phone-576 {
+                flex: 0 0 100%;
+                margin-bottom: 32px;
+            }
+
+            &-price,
+            &-id {
+                font-size: $fs-6;
+
+                @include phone-576 {
+                    font-size: $fs-10;
+
+                }
+            }
+
+            &-colors {
+                width: 24px;
+                height: 24px;
+                margin-right: 8px;
+                border-radius: 4px;
+            }
+
+            &-pic {
+                height: 164px;
+                object-fit: cover;
+            }
+        }
+    }
+
+    &-pagation {
+        margin-bottom: 156px;
+
+        @include pad-768 {
+            padding-top: 33px;
+            margin-bottom: 104px;
+        }
+
+        @include phone-576 {
+            padding-top: 8px;
+            margin-bottom: 56px;
+        }
+
+        &-items {
+            font-size: $fs-9;
+            padding: 10px 17px 14px 14px;
+
+            @include pad-768 {
+                padding: 10px 16px 14px 16px;
+            }
+
+            @include phone-576 {
+                font-size: $fs-13;
+                padding: 8px 10px 9px 11px;
+            }
+        }
+
+        &-prev,
+        &-next {
+            padding: 10px 12px;
+            font-size: $fs-8;
+
+            @include pad-768 {
+                padding: 10px 14px 12px 10px;
+            }
+
+            @include phone-576 {
+                font-size: $fs-12;
+                padding: 8px 8px 7px 9px;
+            }
+        }
+    }
+}
